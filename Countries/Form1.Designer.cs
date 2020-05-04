@@ -36,14 +36,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(436, 64);
+            this.comboBox1.Location = new System.Drawing.Point(438, 85);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 24);
+            this.comboBox1.Size = new System.Drawing.Size(375, 24);
             this.comboBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(84, 64);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 72);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(191, 282);
             this.pictureBox1.TabIndex = 1;
