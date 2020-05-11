@@ -78,9 +78,11 @@
     <Compile Include="Modelos\Currency.cs" />
     <Compile Include="Modelos\Language.cs" />
     <Compile Include="Modelos\RegionalBloc.cs" />
+    <Compile Include="Modelos\Response.cs" />
     <Compile Include="Modelos\Translations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicos\ApiService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

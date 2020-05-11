@@ -15,6 +15,8 @@ namespace Countries
 {
     public partial class Form1 : Form
     {
+        //public List<Country> Rates { get; set; } = new List<Country>();
+
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +39,7 @@ namespace Countries
                 return;
             }
 
-            var rates = JsonConvert.DeserializeObject<List<Country>>(result); 
+            var rates = JsonConvert.DeserializeObject<List<RegionalBloc>>(result); 
 
             comboBox1.DataSource = rates;
             comboBox1.DisplayMember = "Name";//controla o que que propriedade da class é disposto na comboBox, também podes controlar isto com o override toString() na Class Rate
