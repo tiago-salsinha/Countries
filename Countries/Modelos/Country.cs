@@ -29,5 +29,11 @@
         public List<RegionalBloc> RegionalBlocs { get; set; }
         public string Cioc { get; set; }
 
+
+        public override string ToString()
+        {
+            return $"Name";
+        }
+
     }
 }

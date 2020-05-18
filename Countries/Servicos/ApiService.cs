@@ -9,7 +9,9 @@
 
     public class ApiService
     {
-        //Metodo para ir busacar as taxas:
+        /// <summary>
+        /// Metodo para ir buscar os paises:
+        /// </summary>
         public async Task<Response> GetRates(string urlBase, string controller)//um metodo asincrono que vai devolver um objecto do tipo Response 
         {
             try
@@ -30,12 +32,12 @@
                     };
                 }
 
-                var rates = JsonConvert.DeserializeObject<List<RegionalBloc>>(result);
+                var countries = JsonConvert.DeserializeObject<List<RegionalBloc>>(result);
 
                 return new Response
                 {
                     IsSuccess = true,
-                    Result = rates
+                    Result = countries
                 };
             }
             catch (Exception ex)

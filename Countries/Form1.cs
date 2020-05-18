@@ -21,10 +21,10 @@ namespace Countries
         {
             InitializeComponent();
 
-            LoadRates();
+            LoadCountries();
         }
 
-        private async void LoadRates()
+        private async void LoadCountries()
         {
 
             var client = new HttpClient();
@@ -39,16 +39,16 @@ namespace Countries
                 return;
             }
 
-            var rates = JsonConvert.DeserializeObject<List<RegionalBloc>>(result); 
+            var countries = JsonConvert.DeserializeObject<List<RegionalBloc>>(result); 
 
-            comboBox1.DataSource = rates;
+            comboBox1.DataSource = countries;
             comboBox1.DisplayMember = "Name";//controla o que que propriedade da class é disposto na comboBox, também podes controlar isto com o override toString() na Class Rate
 
             //corrige bug da microsoft
             //comBoxDestino.BindingContext = new BindingContext();//liga os objectos do interface ao código
 
-            //comBoxDestino.DataSource = Rates;
-            //comBoxDestino.DisplayMember = "name";
+            //comBoxDestino.DataSource = countries;
+            //comBoxDestino.DisplayMember = "Name";
 
             //progressBar1.Value = 100;
         }
