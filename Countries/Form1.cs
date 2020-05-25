@@ -15,7 +15,7 @@ namespace Countries
 {
     public partial class Form1 : Form
     {
-        //public List<Country> Rates { get; set; } = new List<Country>();
+        //public List<Country> Countries { get; set; } = new List<Country>();
 
         public Form1()
         {
@@ -41,8 +41,20 @@ namespace Countries
 
             var countries = JsonConvert.DeserializeObject<List<RegionalBloc>>(result); 
 
-            comboBox1.DataSource = countries;
-            comboBox1.DisplayMember = "Name";//controla o que que propriedade da class é disposto na comboBox, também podes controlar isto com o override toString() na Class Rate
+            listBoxCountries.DataSource = countries;
+            listBoxCountries.DisplayMember = "Name";//controla o que que propriedade da class é disposto na comboBox, também podes controlar isto com o override toString() na Class Rate
+
+
+            //teste consoante o pais selcionado aparecer o nome na label:
+            //RegionalBloc selectedCountry = (RegionalBloc)listBoxCountries.SelectedItem;
+
+            //if (selectedCountry != null)
+            //{
+            //    lblNome.Text = selectedCountry.Name;
+            //}
+            
+            
+
 
             //corrige bug da microsoft
             //comBoxDestino.BindingContext = new BindingContext();//liga os objectos do interface ao código
@@ -51,6 +63,19 @@ namespace Countries
             //comBoxDestino.DisplayMember = "Name";
 
             //progressBar1.Value = 100;
+        }
+
+        private void listBoxCountries_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //var selectedCountry = listBoxCountries.GetItemText(listBoxCountries.SelectedValue);
+            //lblNome.Text = selectedCountry;
+
+            RegionalBloc selectedCountry = (RegionalBloc)listBoxCountries.SelectedItem;
+
+            if (selectedCountry != null)
+            {
+                lblNome.Text = selectedCountry.Name;
+            }
         }
     }
 }
