@@ -141,60 +141,60 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(700, 97);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(53, 20);
+            this.lblNome.Size = new System.Drawing.Size(60, 24);
             this.lblNome.TabIndex = 11;
             this.lblNome.Text = "label9";
             // 
             // lblCapital
             // 
             this.lblCapital.AutoSize = true;
-            this.lblCapital.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapital.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCapital.Location = new System.Drawing.Point(700, 146);
             this.lblCapital.Name = "lblCapital";
-            this.lblCapital.Size = new System.Drawing.Size(62, 20);
+            this.lblCapital.Size = new System.Drawing.Size(70, 24);
             this.lblCapital.TabIndex = 12;
             this.lblCapital.Text = "label10";
             // 
             // lblRegiao
             // 
             this.lblRegiao.AutoSize = true;
-            this.lblRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegiao.Location = new System.Drawing.Point(700, 190);
             this.lblRegiao.Name = "lblRegiao";
-            this.lblRegiao.Size = new System.Drawing.Size(62, 20);
+            this.lblRegiao.Size = new System.Drawing.Size(70, 24);
             this.lblRegiao.TabIndex = 13;
             this.lblRegiao.Text = "label11";
             // 
             // lblSubRegiao
             // 
             this.lblSubRegiao.AutoSize = true;
-            this.lblSubRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubRegiao.Location = new System.Drawing.Point(700, 241);
             this.lblSubRegiao.Name = "lblSubRegiao";
-            this.lblSubRegiao.Size = new System.Drawing.Size(62, 20);
+            this.lblSubRegiao.Size = new System.Drawing.Size(70, 24);
             this.lblSubRegiao.TabIndex = 14;
             this.lblSubRegiao.Text = "label12";
             // 
             // lblPopulacao
             // 
             this.lblPopulacao.AutoSize = true;
-            this.lblPopulacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPopulacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPopulacao.Location = new System.Drawing.Point(700, 303);
             this.lblPopulacao.Name = "lblPopulacao";
-            this.lblPopulacao.Size = new System.Drawing.Size(62, 20);
+            this.lblPopulacao.Size = new System.Drawing.Size(70, 24);
             this.lblPopulacao.TabIndex = 15;
             this.lblPopulacao.Text = "label13";
             // 
             // lblGini
             // 
             this.lblGini.AutoSize = true;
-            this.lblGini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGini.Location = new System.Drawing.Point(700, 359);
             this.lblGini.Name = "lblGini";
-            this.lblGini.Size = new System.Drawing.Size(62, 20);
+            this.lblGini.Size = new System.Drawing.Size(70, 24);
             this.lblGini.TabIndex = 16;
             this.lblGini.Text = "label14";
             // 
