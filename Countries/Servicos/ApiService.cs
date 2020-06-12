@@ -7,23 +7,26 @@
     using System.Net.Http;
     using System.Threading.Tasks;
 
+    /// <summary>
+    /// This class is used to grab all data from Api
+    /// </summary>
     public class ApiService
     {
         /// <summary>
-        /// Metodo para ir buscar os paises:
+        /// Method to connect and grab data from the Api
         /// </summary>
-        public async Task<Response> GetRates(string urlBase, string controller)//um metodo asincrono que vai devolver um objecto do tipo Response 
+        public async Task<Response> GetCountries(string urlBase, string controller)
         {
             try
             {
-                var client = new HttpClient();//liga-se à Api
-                client.BaseAddress = new Uri(urlBase);//liga-se à base
+                var client = new HttpClient();
+                client.BaseAddress = new Uri(urlBase);
 
-                var response = await client.GetAsync(controller);//liga-se ao controlador
+                var response = await client.GetAsync(controller);
 
                 var result = await response.Content.ReadAsStringAsync();
 
-                if (!response.IsSuccessStatusCode)//testa caso a api funciona ou não
+                if (!response.IsSuccessStatusCode)
                 {
                     return new Response
                     {
@@ -31,8 +34,9 @@
                         Message = result
                     };
                 }
+             
 
-                var countries = JsonConvert.DeserializeObject<List<RegionalBloc>>(result);
+                var countries = JsonConvert.DeserializeObject<List<Country>>(result);
 
                 return new Response
                 {
@@ -42,7 +46,6 @@
             }
             catch (Exception ex)
             {
-
                 return new Response
                 {
                     IsSuccess = false,

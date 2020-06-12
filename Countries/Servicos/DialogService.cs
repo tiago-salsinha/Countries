@@ -4,7 +4,7 @@
     public class DialogService
     {
         /// <summary>
-        /// //Método para comunicar as mensagens de erro
+        /// Method to send error messages to the user
         /// </summary>
         public void ShowMessage(string title, string message)
         {

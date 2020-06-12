@@ -5,29 +5,28 @@
     public class NetworkService
     {
         /// <summary>
-        /// Metodo para testar se a aplicação têm conexão à internet ou não
+        /// Method to check if there is internet connection
         /// </summary>
-       public Response CheckConnection()//retorna um objecto do tipo response que vêm da class Response 
+       public Response CheckConnection()
         {
-            var client = new WebClient();//o webclient testa se têm ligação à net
+            var client = new WebClient();
 
             try
             {
-                using (client.OpenRead("http://clients3.google.com/generate_204"))//faz ping ao servidor da google, é uma forma de testar se existe ligacao à net ou não
+                using (client.OpenRead("http://clients3.google.com/generate_204"))
                 {
                     return new Response
                     {
-                        IsSuccess = true,
-                        //Message = "Existe conexão à internet"
+                        IsSuccess = true,                       
                     };
                 }
             }
-            catch //caso ele não consiga fazer a ligação
+            catch
             {
                 return new Response
                 {
                     IsSuccess = false,
-                    Message = "Configure a sua conexão à internet"
+                    Message = "Please connect your device to the internet."
                 };
             }
         }
